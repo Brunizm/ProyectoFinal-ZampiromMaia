@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Purchase Simulator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+</head>
+<body>
+    <h1>Coffee Purchase Simulator</h1>
+
+    <div>
+        <label for="continent">Enter your continent:</label>
+        <input type="text" id="continent" placeholder="e.g., North America">
+        <span class="error-message" id="continentError"></span>
+        <button id="nextButton">Next</button>
+    </div>
+
+    <div id="cityDiv" style="display: none;">
+        <label for="city">Enter your city:</label>
+        <input type="text" id="city" placeholder="e.g., New York">
+        <span class="error-message" id="cityError"></span>
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div id="quantityDiv" style="display: none;">
+        <label for="quantity">Enter quantity of coffees:</label>
+        <input type="number" id="quantity" min="1" placeholder="e.g., 2">
+        <span class="error-message" id="quantityError"></span>
+        <button id="calculateButton">Calculate Total</button>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="loading" style="display: none;">Loading...</div>
+
+    <footer>
+        <p>Coffee Purchase Simulator.</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
